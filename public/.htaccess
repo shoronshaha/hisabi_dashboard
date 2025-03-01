@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteRule . /index.html [L]
+</IfModule>
+
+RewriteCond %{HTTP_HOST} ^tripadmin.netlify.app$ [OR]
+RewriteCond %{HTTP_HOST} ^www.tripadmin.netlify.app$
+RewriteRule ^/?$ "https://tripadmin.netlify.app/" [R=301,L]

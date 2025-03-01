@@ -1,0 +1,28 @@
+/* APP CSS */
+
+/* ______________timeline__________ */
+:where(.timeline > li) {
+    position: relative;
+    display: grid;
+    flex-shrink: 0;
+    align-items: center;
+    grid-template-rows: var(--timeline-row-start, minmax(0, 0fr)) auto var(--timeline-row-end, minmax(0, 1fr));
+    grid-template-columns: var(--timeline-col-start, minmax(0, 0fr)) auto var(--timeline-col-end, minmax(0, fr));
+}
+
+
+.des-img{
+    display: flow-root;
+}
+
+#img1{
+    float: right;
+    margin: 0px 0px 10px 10px;
+}
+
+
+@media screen and (max-width: 480px) {
+    #img1{
+        width: 100% ;
+    }
+  }

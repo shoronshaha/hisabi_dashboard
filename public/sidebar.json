@@ -1,0 +1,151 @@
+[
+    {
+      "title": "Dashboard",
+      "path": "/dashboard",
+      "icon": "FaHome",
+      "subitems": []
+    },
+    {
+      "title": "Analytics",
+      "path": "/dashboard/analytics",
+      "icon": "FaChartBar",
+      "subitems": [
+        {
+          "title": "Traffic",
+          "path": "/dashboard/analytics/traffic",
+          "icon": "FaTrafficLight"
+        },
+        {
+          "title": "Conversions",
+          "path": "/dashboard/analytics/conversions",
+          "icon": "FaChartLine"
+        }
+      ]
+    },
+    {
+      "title": "Sales",
+      "path": "/dashboard/sales",
+      "icon": "FaShoppingBag",
+      "subitems": [
+        {
+          "title": "Daily Sales",
+          "path": "/dashboard/sales/daily",
+          "icon": "FaCalendarDay"
+        },
+        {
+          "title": "Monthly Sales",
+          "path": "/dashboard/sales/monthly",
+          "icon": "FaCalendarAlt"
+        }
+      ]
+    },
+    {
+      "title": "Customers",
+      "path": "/dashboard/customers",
+      "icon": "FaUsers",
+      "subitems": [
+        {
+          "title": "All Customers",
+          "path": "/dashboard/customers/all",
+          "icon": "FaUser"
+        },
+        {
+          "title": "VIP Customers",
+          "path": "/dashboard/customers/vip",
+          "icon": "FaStar"
+        }
+      ]
+    },
+    {
+      "title": "Orders",
+      "path": "/dashboard/orders",
+      "icon": "FaBox",
+      "subitems": [
+        {
+          "title": "Pending Orders",
+          "path": "/dashboard/orders/pending",
+          "icon": "FaClock"
+        },
+        {
+          "title": "Completed Orders",
+          "path": "/dashboard/orders/completed",
+          "icon": "FaCheckCircle"
+        }
+      ]
+    },
+    {
+      "title": "Products",
+      "path": "/dashboard/products",
+      "icon": "FaBoxes",
+      "subitems": [
+        {
+          "title": "All Products",
+          "path": "/dashboard/products/all",
+          "icon": "FaList"
+        },
+        {
+          "title": "Add New Product",
+          "path": "/dashboard/products/add",
+          "icon": "FaPlusCircle"
+        }
+      ]
+    },
+    {
+      "title": "Categories",
+      "path": "/dashboard/categories",
+      "icon": "FaLayerGroup",
+      "subitems": [
+        {
+          "title": "Men's Fashion",
+          "path": "/dashboard/categories/men",
+          "icon": "FaTshirt"
+        },
+        {
+          "title": "Women's Fashion",
+          "path": "/dashboard/categories/women",
+          "icon": "FaShoppingBag"
+        }
+      ]
+    },
+    {
+      "title": "Reports",
+      "path": "/dashboard/reports",
+      "icon": "FaFileAlt",
+      "subitems": [
+        {
+          "title": "Sales Reports",
+          "path": "/dashboard/reports/sales",
+          "icon": "FaChartBar"
+        },
+        {
+          "title": "Customer Reports",
+          "path": "/dashboard/reports/customers",
+          "icon": "FaUsers"
+        }
+      ]
+    },
+    {
+      "title": "Settings",
+      "path": "/dashboard/settings",
+      "icon": "FaCog",
+      "subitems": [
+        {
+          "title": "Profile Settings",
+          "path": "/dashboard/settings/profile",
+          "icon": "FaUserCog"
+        },
+        {
+          "title": "Security Settings",
+          "path": "/dashboard/settings/security",
+          "icon": "FaLock"
+        }
+      ]
+    },
+    {
+      "title": "Logout",
+      "path": "/logout",
+      "icon": "FaSignOutAlt",
+      "subitems": []
+    }
+  ]
+  

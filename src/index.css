@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;350;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #292764;
+  --primary-rgb: rgba(41, 39, 100, 0.836);
+  --secondary: #7d7c91cb;
+  --gray: #f7f9fa;
+  --bgcolor: #efeff7;
+  --red: #c53333d3;
+
+  --hover: #f5f5c036;
+
+  /* Bage Color  */
+  --hold: #eeebbdf5;
+  --in_progress: #46bce03f;
+  --cancelled: #f8b2b24d;
+  --rejected: #dbb6af4d;
+  --issued: #abecdcd5;
+  --completed: #d4eeca9f;
+  --complete: #d0dee09f;
+  --hold: #eeebbdf5;
+  --expired: #aaa4aa36;
+  --voided: #df85df36;
+}
+
+* {
+  font-family: Outfit !important;
+}
+
+.tr-shadow {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
+}
+
+.hold {
+  background: var(--hold);
+  color: #5e491c;
+}
+
+.pending {
+  background: var(--hold);
+  color: #5e491c;
+}
+
+.solved {
+  background-color: var(--issued) !important;
+  color: #06660e !important;
+}
+
+.in_progress {
+  background-color: var(--in_progress) !important;
+  color: #346d77 !important;
+}
+.request {
+  background-color: var(--in_progress) !important;
+  color: #346d77 !important;
+}
+
+.cancelled {
+  background-color: var(--cancelled) !important;
+  color: #f31515 !important;
+}
+
+.rejected {
+  background-color: var(--rejected) !important;
+  color: #c55d5d !important;
+}
+
+.initiated {
+  background-color: var(--rejected) !important;
+  color: #c55d5d !important;
+}
+
+.issued {
+  background-color: var(--issued) !important;
+  color: #06660e !important;
+}
+
+.ticketed {
+  background-color: var(--issued) !important;
+  color: #285202 !important;
+}
+
+.voided {
+  background-color: var(--voided) !important;
+  color: #dd009b !important;
+}
+.completed {
+  background-color: var(--completed) !important;
+  color: #041a7c !important;
+}
+
+.complete {
+  background-color: var(--complete) !important;
+  color: #047c40 !important;
+}
+
+.expired {
+  background-color: var(--expired) !important;
+  color: #0d1803 !important;
+}
+
+/* In your global CSS file */
+.no-scrollbar {
+  max-height: calc(100vh - 64px) !important;
+}
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.tooltip-error {
+  --tooltip-color: rgb(249 115 22) !important;
+  --tooltip-text-color: white !important;
+}
