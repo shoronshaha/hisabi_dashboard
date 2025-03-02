@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navber from "./includes/Navber";
 import Sidebar from "./includes/Sidebar";
 import { Outlet } from "react-router-dom";
@@ -7,18 +8,23 @@ import { TopHead } from "./includes/TopHead";
 export const Master = () => {
   const [isExpanded, setIsExpanded] = useState(true);
   const [expandedSections, setExpandedSections] = useState({});
+  const location = useLocation(); // Get current route
+
+  // Define routes where the sidebar should be hidden
+  const hideSidebarRoutes = ["/dashboard/sales/pos"];
+
+  // Check if the current path matches or starts with any of the hidden routes
+  const shouldHideSidebar = hideSidebarRoutes.some((route) =>
+    location.pathname.startsWith(route)
+  );
 
   const handleContentToggle = (section) => {
     setExpandedSections((prevState) => {
-      // Create a new state where all sections are set to false
       const newState = Object.keys(prevState).reduce((acc, key) => {
         acc[key] = false;
         return acc;
       }, {});
-
-      // Toggle the clicked section
       newState[section] = !prevState[section];
-
       return newState;
     });
   };
@@ -38,8 +44,9 @@ export const Master = () => {
   }, []);
 
   return (
-    <>
-      <div className="flex w-full h-full relative ">
+    <div className="flex w-full h-full relative">
+      {/* Show Sidebar only if it's not in hideSidebarRoutes */}
+      {!shouldHideSidebar && (
         <div className="hidden lg:block">
           <Sidebar
             toggleSidebar={toggleSidebar}
@@ -48,29 +55,26 @@ export const Master = () => {
             toggle={handleContentToggle}
           />
         </div>
+      )}
 
-        {/* Overlay when the sidebar is expanded on small screens */}
-        {/* {isExpanded && window.innerWidth <= 1024 && (
-          <div className="fixed inset-0 bg-black/50 z-40 md:hidden" onClick={isExpanded && window.innerWidth <= 1024 && toggleSidebar}></div>
-        )} */}
-
-        <main
-          className={`transition-all duration-300 w-full ${
-            isExpanded ? "lg:w-[calc(100%-256px)] lg:ml-64" : "w-full lg:ms-16"
-          } bg-gray-100 `}
-        >
-          <Navber
-            toggleSidebar={toggleSidebar}
-            isExpanded={isExpanded}
-            expandedSections={expandedSections}
-            toggle={handleContentToggle}
-          />
-          <div className="mb-[64px] lg:mb-0">
-            <TopHead />
-            <Outlet />
-          </div>
-        </main>
-      </div>
-    </>
+      <main
+        className={`transition-all duration-300 w-full ${
+          !shouldHideSidebar && isExpanded
+            ? "lg:w-[calc(100%-256px)] lg:ml-64"
+            : "w-full"
+        } bg-gray-100`}
+      >
+        <Navber
+          toggleSidebar={toggleSidebar}
+          isExpanded={isExpanded}
+          expandedSections={expandedSections}
+          toggle={handleContentToggle}
+        />
+        <div className="mb-[64px] lg:mb-0">
+          <TopHead />
+          <Outlet />
+        </div>
+      </main>
+    </div>
   );
 };

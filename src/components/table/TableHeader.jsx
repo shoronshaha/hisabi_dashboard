@@ -1,5 +1,4 @@
 const TableHeader = ({ headerGroups, th }) => {
-  console.log("th new :>> ", th);
   return (
     <thead>
       {headerGroups.map((headerGroup) => {
