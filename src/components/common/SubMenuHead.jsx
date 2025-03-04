@@ -4,6 +4,7 @@ import * as MdOutlinePostAdd from "react-icons/md";
 import * as HiIcons from "react-icons/hi"; // Import Heroicons
 import * as CiIcons from "react-icons/fa"; // Import Circum Icons
 import * as FaUserGear from "react-icons/fa6";
+import * as IoMdContacts from "react-icons/io";
 export const SubMenuHead = ({
   exp,
   title,
@@ -21,12 +22,14 @@ export const SubMenuHead = ({
     CiIcons[active] ||
     FaUserGear[active] ||
     MdOutlinePostAdd[active] ||
+    IoMdContacts[active] ||
     null;
   const IconInActive =
     HiIcons[inactive] ||
     CiIcons[inactive] ||
     FaUserGear[inactive] ||
     MdOutlinePostAdd[inactive] ||
+    IoMdContacts[inactive] ||
     null;
 
   return (

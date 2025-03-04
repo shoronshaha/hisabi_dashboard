@@ -29,6 +29,10 @@ const MainRoute = () => {
           </Route>
           <Route path="sales">
             <Route path="pos" element={<PosPage />} />
+            {/* <Route path="add-sales" element={<PosPage />} />
+            <Route path="sales-list" element={<PosPage />} />
+            <Route path="sales-payments" element={<PosPage />} />
+            <Route path="sales-return-list" element={<PosPage />} /> */}
            
           </Route>
 

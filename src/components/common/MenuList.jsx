@@ -5,6 +5,7 @@ import * as HiIcons from "react-icons/hi";
 import * as CiIcons from "react-icons/fa";
 import * as FaUserGear from "react-icons/fa6";
 import * as MdOutlinePostAdd from "react-icons/md";
+import * as IoMdContacts from "react-icons/io";
 
 export const MenuList = ({
   isExpanded,
@@ -20,12 +21,14 @@ export const MenuList = ({
     CiIcons[active] ||
     FaUserGear[active] ||
     MdOutlinePostAdd[active] ||
+    IoMdContacts[active] ||
     null;
   const IconInActive =
     HiIcons[inactive] ||
     CiIcons[inactive] ||
     FaUserGear[inactive] ||
     MdOutlinePostAdd[inactive] ||
+    IoMdContacts[inactive] ||
     null;
 
   return (

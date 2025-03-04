@@ -75,36 +75,46 @@ const sidebarData = [
     userType: ["ADMIN"],
   },
 
-  //   ___ Label Booking ___
+  // //   ___ Label Booking ___
+  // {
+  //   label: "Booking",
+  //   userType: ["ADMIN", "user"],
+  // },
   {
-    label: "Booking",
-    userType: ["ADMIN", "user"],
-  },
-  {
-    title: "Booking",
+    title: "Contacts",
     icon: {
-      active: "HiOutlineHome",
-      inactive: "HiOutlineHome",
+      active: "IoMdContacts",
+      inactive: "IoMdContacts",
     },
     userType: ["ADMIN", "user"],
     subMenu: [
       {
-        title: "Hold",
+        title: "Add Customer",
         path: "/booking/hold",
         userType: ["", "user"],
       },
       {
-        title: "In Progress",
+        title: "Customer List",
         path: "/booking/in-progress",
         userType: ["ADMIN"],
       },
       {
-        title: "Issued",
+        title: "Add Supplier",
         path: "/booking/issued",
         userType: ["ADMIN", "user"],
       },
       {
-        title: "History",
+        title: "Suppliers List",
+        path: "/booking/history",
+        userType: ["ADMIN", "user"],
+      },
+      {
+        title: "Import Customer",
+        path: "/booking/history",
+        userType: ["ADMIN", "user"],
+      },
+      {
+        title: "Import Suppliers",
         path: "/booking/history",
         userType: ["ADMIN", "user"],
       },
