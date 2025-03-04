@@ -25,7 +25,7 @@ export const NotFound = () => {
           Page Not Found
         </h2>
         <p className="text-gray-500 mb-6">
-          Sorry, the page you are looking for doesn't exist.
+          Sorry, the page you are looking for doesn't exist not found.
         </p>
         <button
           onClick={handleClick}
