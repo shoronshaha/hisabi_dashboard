@@ -65,15 +65,15 @@ const sidebarData = [
     ],
   },
 
-  {
-    title: "Order",
-    path: "/dashboard/order",
-    icon: {
-      active: "Fa500Px",
-      inactive: "Fa500Px",
-    },
-    userType: ["ADMIN"],
-  },
+  // {
+  //   title: "Order",
+  //   path: "/dashboard/order",
+  //   icon: {
+  //     active: "Fa500Px",
+  //     inactive: "Fa500Px",
+  //   },
+  //   userType: ["ADMIN"],
+  // },
 
   // //   ___ Label Booking ___
   // {

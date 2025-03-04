@@ -17,7 +17,7 @@ const MainRoute = () => {
         <Route path="/" element={<LoginPage />} />
         <Route path="/dashboard" element={<Master />}>
           <Route index element={<DashboardPage />} />
-          <Route path="order" element={<OrderPage />} />
+          {/* <Route path="order" element={<OrderPage />} /> */}
 
           <Route path="user">
             <Route path="userList" element={<UsersListPage />} />
