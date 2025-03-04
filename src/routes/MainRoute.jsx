@@ -9,8 +9,8 @@ import RolesListPage from "../pages/user/rolesList/RolesListPage";
 import AddedNewUserFrom from "../pages/user/usersList/content/AddedNewUser";
 import RolePermissionsForm from "../pages/user/rolesList/RolePermissionsForm";
 import PosPage from "../pages/Sales/pos/PosPage";
-// import PosPageOne from "../pages/sales/pos/PosPageOne";
 
+// import PosPageOne from "../pages/sales/pos/PosPageOne";
 
 const MainRoute = () => {
   return (
@@ -33,7 +33,6 @@ const MainRoute = () => {
             <Route path="sales-list" element={<PosPage />} />
             <Route path="sales-payments" element={<PosPage />} />
             <Route path="sales-return-list" element={<PosPage />} /> */}
-           
           </Route>
 
           {/* Catch-All Route */}
