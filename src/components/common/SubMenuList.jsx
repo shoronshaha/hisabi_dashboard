@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
+import { MdPointOfSale } from "react-icons/md";
 import { HiOutlineStop } from "react-icons/hi";
 
 export const SubMenuList = ({ to, title, isActiveRoute, isExpanded }) => {
@@ -16,7 +17,9 @@ export const SubMenuList = ({ to, title, isActiveRoute, isExpanded }) => {
         {isExpanded ? (
           <div className="flex items-center">
             {to === "/dashboard/sales/pos" ? (
-              <></>
+              <>
+                <MdPointOfSale className="m-1" />
+              </>
             ) : (
               <HiOutlineStop className="sm:me-2 me-3 text-[6px]" />
             )}{" "}
@@ -25,7 +28,10 @@ export const SubMenuList = ({ to, title, isActiveRoute, isExpanded }) => {
         ) : (
           <>
             {to === "/dashboard/sales/pos" ? (
-              <></>
+              <>
+                {" "}
+                <MdPointOfSale className="m-1" />
+              </>
             ) : (
               <HiOutlineStop className=" text-[6px]" />
             )}

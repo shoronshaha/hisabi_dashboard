@@ -57,13 +57,15 @@ export const Master = () => {
         </div>
       )}
 
-      <main
-        className={`transition-all duration-300 w-full ${
-          !shouldHideSidebar && isExpanded
-            ? "lg:w-[calc(100%-256px)] lg:ml-64"
-            : "w-full"
-        } bg-gray-100`}
-      >
+<main
+  className={`transition-all duration-300 w-full ${
+    shouldHideSidebar
+      ? "w-full" // Full width when on POS route
+      : isExpanded
+      ? "lg:w-[calc(100%-256px)] lg:ml-64" // Sidebar expanded
+      : "lg:w-[calc(100%-64px)] lg:ml-16" // Sidebar collapsed
+  } bg-gray-100`}
+>
         <Navber
           toggleSidebar={toggleSidebar}
           isExpanded={isExpanded}
