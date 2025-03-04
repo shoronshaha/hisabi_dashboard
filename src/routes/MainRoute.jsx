@@ -8,9 +8,7 @@ import UsersListPage from "../pages/user/usersList/UsersListPage";
 import RolesListPage from "../pages/user/rolesList/RolesListPage";
 import AddedNewUserFrom from "../pages/user/usersList/content/AddedNewUser";
 import RolePermissionsForm from "../pages/user/rolesList/RolePermissionsForm";
-import PosPage from "../pages/Sales/pos/PosPage";
-
-// import PosPageOne from "../pages/sales/pos/PosPageOne";
+import PosPage from "../pages/sales/pos/PosPage";
 
 const MainRoute = () => {
   return (
