@@ -5,6 +5,8 @@ import * as HiIcons from "react-icons/hi"; // Import Heroicons
 import * as CiIcons from "react-icons/fa"; // Import Circum Icons
 import * as FaUserGear from "react-icons/fa6";
 import * as IoMdContacts from "react-icons/io";
+import * as GiLevelFourAdvanced from "react-icons/gi";
+import * as RiCouponLine from "react-icons/ri";
 export const SubMenuHead = ({
   exp,
   title,
@@ -23,6 +25,8 @@ export const SubMenuHead = ({
     FaUserGear[active] ||
     MdOutlinePostAdd[active] ||
     IoMdContacts[active] ||
+    GiLevelFourAdvanced[active] ||
+    RiCouponLine[active] ||
     null;
   const IconInActive =
     HiIcons[inactive] ||
@@ -30,6 +34,8 @@ export const SubMenuHead = ({
     FaUserGear[inactive] ||
     MdOutlinePostAdd[inactive] ||
     IoMdContacts[inactive] ||
+    GiLevelFourAdvanced[inactive] ||
+    RiCouponLine[inactive] ||
     null;
 
   return (

@@ -6,6 +6,8 @@ import * as CiIcons from "react-icons/fa";
 import * as FaUserGear from "react-icons/fa6";
 import * as MdOutlinePostAdd from "react-icons/md";
 import * as IoMdContacts from "react-icons/io";
+import * as GiLevelFourAdvanced from "react-icons/io";
+import * as RiCouponLine from "react-icons/ri";
 
 export const MenuList = ({
   isExpanded,
@@ -22,6 +24,8 @@ export const MenuList = ({
     FaUserGear[active] ||
     MdOutlinePostAdd[active] ||
     IoMdContacts[active] ||
+    GiLevelFourAdvanced[active] ||
+    RiCouponLine[active] ||
     null;
   const IconInActive =
     HiIcons[inactive] ||
@@ -29,6 +33,8 @@ export const MenuList = ({
     FaUserGear[inactive] ||
     MdOutlinePostAdd[inactive] ||
     IoMdContacts[inactive] ||
+    GiLevelFourAdvanced[inactive] ||
+    RiCouponLine[inactive] ||
     null;
 
   return (
