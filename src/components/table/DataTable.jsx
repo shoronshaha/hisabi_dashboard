@@ -102,7 +102,7 @@ const DataTable = ({
             disabled={!canNextPage}
             className="px-4 py-2 bg-gray-200 rounded-full"
           >
-            Next
+            Nex
           </button>
         </div>
       )}
