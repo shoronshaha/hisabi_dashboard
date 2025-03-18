@@ -16,6 +16,7 @@ const UserTable = ({
   role,
   handleDelete,
   handleEdit,
+  rowBorderColor,
 }) => {
   const columns = React.useMemo(
     () =>
@@ -106,7 +107,16 @@ const UserTable = ({
     [phone, address, action, status, role, handleDelete]
   );
 
-  return <DataTable columns={columns} data={data} th={th} tr={tr} td={td} />;
+  return (
+    <DataTable
+      columns={columns}
+      data={data}
+      th={th}
+      tr={tr}
+      td={td}
+      rowBorderColor={rowBorderColor}
+    />
+  );
 };
 
 export default UserTable;

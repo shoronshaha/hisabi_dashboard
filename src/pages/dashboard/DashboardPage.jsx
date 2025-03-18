@@ -6,6 +6,7 @@ import DashboardDetailsCard from "./content/DashboardDetailsCard";
 import DashboardTable from "./content/DashboardTable";
 import { ManageOrders } from "../../components/ManageOders";
 import LineChart from "../../components/chart/LineChart";
+import DynamicBarChart from "../../components/chart/barChart2";
 
 function DashboardPage() {
   return (
@@ -13,6 +14,7 @@ function DashboardPage() {
       <div className="min-h-[90vh] space-y-6 p-4">
         {/* Dashboard Overview */}
         <DashboardCard />
+        <DynamicBarChart/>
         <DashboardDetailsCard />
         <LineChart></LineChart>
         {/* Bar Chart and Dashboard Table */}

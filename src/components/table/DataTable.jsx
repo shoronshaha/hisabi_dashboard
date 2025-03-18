@@ -2,7 +2,15 @@ import { useTable, usePagination } from "react-table";
 import TableHeader from "./TableHeader";
 import TableRow from "./TableRow";
 
-const DataTable = ({ columns, data, th, tr, td, noPagination }) => {
+const DataTable = ({
+  columns,
+  data,
+  th,
+  tr,
+  td,
+  noPagination,
+  rowBorderColor,
+}) => {
   const {
     getTableProps,
     getTableBodyProps,
@@ -66,7 +74,13 @@ const DataTable = ({ columns, data, th, tr, td, noPagination }) => {
           {page.map((row) => {
             prepareRow(row);
             return (
-              <TableRow key={row.id || row.index} row={row} tr={tr} td={td} />
+              <TableRow
+                key={row.id || row.index}
+                row={row}
+                tr={tr}
+                td={td}
+                rowBorderColor={rowBorderColor}
+              />
             );
           })}
         </tbody>
